@@ -1,0 +1,49 @@
+:root {
+  --black: #282828;
+  --blue: #2892f9;
+  --red: #fb2f27;
+  --yellow: #fdfe29;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.rings {
+  width: 300px;
+  height: 300px;
+}
+
+.ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.ring-1 {
+  width: 100%;
+  background-color: var(--black);
+  height: 100%;
+}
+
+.ring-2 {
+  width: 75%;
+  background-color: var(--blue);
+  height: 75%;
+}
+
+.ring-3 {
+  width: 60%;
+  background-color: var(--red);
+  height: 60%;
+}
+
+.bullseye {
+  width: 50%;
+  background-color: var(--yellow);
+  height: 50%;
+}
