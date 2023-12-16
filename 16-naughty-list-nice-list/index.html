@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="modal hidden" id="modal"></div>
+    <div class="form hidden" id="form">
+      <div class="modal-header">
+        <h2>Add New Child</h2>
+        <p id="close-btn" class="close-btn">X</p>
+      </div>
+      <div class="name">
+        <label for="child-name">Name</label>
+        <input
+          type="text"
+          id="child-name"
+          name="child-name"
+          class="name-input"
+        />
+      </div>
+      <div class="checkbox">
+        <label for="was-nice">Was Nice?</label>
+        <input type="checkbox" id="was-nice" name="was-nice" />
+      </div>
+      <button id="add-child">Add child</button>
+    </div>
+    <h1>🎅 Naughty List, Nice List 🎁</h1>
+    <div class="container">
+      <div>
+        <h2>Nice List</h2>
+        <ul class="list nice-list" id="nice-list"></ul>
+      </div>
+      <div>
+        <h2>Naughty List</h2>
+        <ul class="list naughty-list" id="naughty-list"></ul>
+      </div>
+    </div>
+    <button id="btn" type="button">Sort</button>
+    <button id="add-new" type="button" class="add-new__btn">
+      Add New Child
+    </button>
+    <script src="index.pack.js"></script>
+  </body>
+</html>
