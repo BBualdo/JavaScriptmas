@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-word: #5134ff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1::after {
+  content: " Asia";
+  color: var(--bg-word);
+  animation: carousel 3s ease infinite;
+}
+
+@keyframes carousel {
+  0% {
+    content: " Asia";
+  }
+  25% {
+    content: " Coding";
+  }
+  50% {
+    content: " Music";
+  }
+  75% {
+    content: " Christmas";
+  }
+}
