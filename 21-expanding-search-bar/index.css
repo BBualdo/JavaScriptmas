@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --search-border: #bbb;
+  --search-focus-border: #3a71ca;
+}
+
+.container {
+  padding: 40px;
+}
+
+.search-bar {
+  width: 33%;
+  transition: width 0.5s ease;
+  border: 1px var(--search-border) solid;
+}
+
+.search-bar::placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: var(--search-focus-border);
+  outline: none;
+  width: 100%;
+}
+
+.search-bar:focus::placeholder {
+  opacity: 0;
+}
